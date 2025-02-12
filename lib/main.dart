@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -32,14 +30,18 @@ class HomeActivity extends StatelessWidget{
           ListTile(leading: Icon(Icons.exit_to_app),title: Text("Exit"),onTap: (){Navigator.pop(context);},)
         ],)),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.purpleAccent,
-        selectedItemColor: Colors.blue,
+        backgroundColor: Colors.blue,
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.white,
         items: const[
           BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
         ],),
-
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},child: Icon(Icons.add),
+        backgroundColor: Colors.purpleAccent,
+          foregroundColor: Colors.white,),
     );
+
   }
 }
