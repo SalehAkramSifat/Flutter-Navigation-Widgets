@@ -31,6 +31,14 @@ class HomeActivity extends StatelessWidget{
           ListTile(leading: Icon(Icons.person_pin),title: Text("Profile"),),
           ListTile(leading: Icon(Icons.exit_to_app),title: Text("Exit"),onTap: (){Navigator.pop(context);},)
         ],)),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.purpleAccent,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.white,
+        items: const[
+          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
+        ],),
 
     );
   }
